@@ -96,7 +96,7 @@
 					<draftCompile>true</draftCompile>
 					<webappDirectory>${project.build.directory}/${project.build.finalName}/META-INF/resources</webappDirectory>
 					<modules>
-						<module>${package}.webapp.client.${webModuleName}</module>
+						<module>${package}.webapp.${webModuleName}</module>
 					</modules>
 					<deploy>${project.build.directory}/gwt-deploy</deploy>
 				</configuration>

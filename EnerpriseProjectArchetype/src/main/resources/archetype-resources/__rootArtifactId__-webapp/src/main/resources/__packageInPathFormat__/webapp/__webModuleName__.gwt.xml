@@ -11,7 +11,7 @@
 	<inherits name="ru.sendto.gwt.client.Bus" />
 	<inherits name="ru.sendto.gwt.YT" />
 	<inherits name="ru.sendto.DtoCommon" />
-	<inherits name="ru.sendto.Dto" />
+	<inherits name="${package}.Dto" />
 	<entry-point class="${package}.webapp.client.${webModuleName}" />
 	<source path="client" />
 	<set-property name="user.agent" value="safari"/>
