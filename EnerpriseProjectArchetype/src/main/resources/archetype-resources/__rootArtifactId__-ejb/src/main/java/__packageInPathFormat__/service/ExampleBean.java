@@ -18,7 +18,7 @@ import javax.persistence.EntityManager;
 
 import lombok.extern.java.Log;
 import ${package}.dto.UserDto;
-import ${package}.dto.requests.CreateUserRequest;
+import ${package}.dto.request.CreateUserRequest;
 import ru.sendto.ejb.interceptor.BundleResult;
 import ${package}.dao.entity.User;
 

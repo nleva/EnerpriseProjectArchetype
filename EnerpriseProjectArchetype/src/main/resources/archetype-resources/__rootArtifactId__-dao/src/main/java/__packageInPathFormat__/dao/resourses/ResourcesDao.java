@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ru.sendto.quiz.dao.resourses;
+package ${package}.dao.resourses;
 
 import javax.enterprise.inject.Produces;
 import javax.persistence.EntityManager;

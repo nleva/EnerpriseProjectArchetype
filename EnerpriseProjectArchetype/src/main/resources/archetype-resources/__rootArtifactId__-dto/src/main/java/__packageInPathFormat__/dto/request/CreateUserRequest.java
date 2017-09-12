@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import ru.sendto.dto.UserDto;
+import ${package}.dto.UserDto;
 
 @Data
 @EqualsAndHashCode(callSuper=false)
