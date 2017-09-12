@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>LibsManagement</artifactId>
+		<groupId>ru.send-to.versionManagement</groupId>
+		<version>0.4</version>
+	</parent>
+
+	<groupId>${groupId}</groupId>
+	<artifactId>${artifactId}</artifactId>
+	<version>${version}</version>
+	<packaging>pom</packaging>
+	<name>${artifactId}</name>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>${groupId}</groupId>
+				<artifactId>${rootArtifactId}-dto</artifactId>
+				<version>${version}</version>
+				<type>jar</type>
+			</dependency>
+			<dependency>
+				<groupId>${groupId}</groupId>
+				<artifactId>${rootArtifactId}-web-static</artifactId>
+				<version>${version}</version>
+				<type>war</type>
+			</dependency>
+			<dependency>
+				<groupId>${groupId}</groupId>
+				<artifactId>${rootArtifactId}-webapp</artifactId>
+				<version>${version}</version>
+				<type>jar</type>
+			</dependency>
+			<dependency>
+				<groupId>${groupId}</groupId>
+				<artifactId>${rootArtifactId}-web-less</artifactId>
+				<version>${version}</version>
+				<type>jar</type>
+			</dependency>
+			<dependency>
+				<groupId>${groupId}</groupId>
+				<artifactId>${rootArtifactId}-ejb</artifactId>
+				<version>${version}</version>
+				<type>ejb</type>
+			</dependency>
+			<dependency>
+				<groupId>${groupId}</groupId>
+				<artifactId>${rootArtifactId}-dao</artifactId>
+				<version>${version}</version>
+				<type>jar</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>

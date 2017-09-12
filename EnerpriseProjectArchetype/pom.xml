@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>ru.send-to.versionManagement</groupId>
+		<artifactId>LibsManagement</artifactId>
+		<version>0.4</version>
+	</parent>
+	<groupId>ru.send-to.archetypes</groupId>
+	<artifactId>ejb-dao-dto-gwt-less-javaee7</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>maven-archetype</packaging>
+
+	<name>EnerpriseProjectArchetype</name>
+
+	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.archetype</groupId>
+				<artifactId>archetype-packaging</artifactId>
+			</extension>
+		</extensions>
+
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-archetype-plugin</artifactId>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+
+	<developers>
+		<developer>
+			<id>nleva</id>
+			<name>Lev Nadeinsky</name>
+			<email>n.lev.a@ya.ru</email>
+			<timezone>+4</timezone>
+		</developer>
+	</developers>
+	<scm>
+		<url>https://github.com/nleva/${project.artifactId}</url>
+		<connection>scm:git:https://github.com/nleva/${project.artifactId}.git</connection>
+		<developerConnection>scm:git:https://github.com/nleva/${project.artifactId}.git</developerConnection>
+	</scm>
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+</project>
