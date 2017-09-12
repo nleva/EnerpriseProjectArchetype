@@ -1,137 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="Quiz"
-    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  
-  <modules>
-    <module id="${rootArtifactId}-ear" dir="__rootArtifactId__-ear" name="${rootArtifactId}-ear">
-      <fileSets>
-        <fileSet encoding="UTF-8">
-          <directory>src/main/application</directory>
-          <includes>
-            <include>**/*.MF</include>
-          </includes>
-        </fileSet>
-      </fileSets>
-    </module>
-    <module id="${rootArtifactId}-dto" dir="__rootArtifactId__-dto" name="${rootArtifactId}-dto">
-      <fileSets>
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory>src/main/java</directory>
-          <includes>
-            <include>**/*.java</include>
-            <include>**/*.config</include>
-          </includes>
-        </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory>src/main/resources</directory>
-          <includes>
-            <include>**/*.xml</include>
-            <include>**/*.MF</include>
-          </includes>
-        </fileSet>
-    </module>
-    <module id="${rootArtifactId}-ejb" dir="__rootArtifactId__-ejb" name="${rootArtifactId}-ejb">
-      <fileSets>
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory>src/main/java</directory>
-          <includes>
-            <include>**/*.java</include>
-          </includes>
-        </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory>src/main/resources</directory>
-          <includes>
-            <include>**/*.xml</include>
-          </includes>
-        </fileSet>
-        <fileSet encoding="UTF-8">
-          <directory>src/main/resources</directory>
-          <includes>
-            <include>**/*.MF</include>
-          </includes>
-        </fileSet>
-      </fileSets>
-    </module>
-    <module id="${rootArtifactId}-dao" dir="__rootArtifactId__-dao" name="${rootArtifactId}-dao">
-      <fileSets>
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory>src/main/java</directory>
-          <includes>
-            <include>**/*.java</include>
-            <include>**/*.config</include>
-          </includes>
-        </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory>src/main/resources</directory>
-          <includes>
-            <include>**/*.xml</include>
-            <include>**/*.MF</include>
-          </includes>
-        </fileSet>
-      </fileSets>
-    </module>
-    <module id="${rootArtifactId}-web-static" dir="__rootArtifactId__-web-static" name="${rootArtifactId}-web-static">
-      <fileSets>
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory>src/main/webapp</directory>
-          <includes>
-            <include>**/*.html</include>
-          </includes>
-        </fileSet>
-      </fileSets>
-    </module>
-    <module id="${rootArtifactId}-webapp" dir="__rootArtifactId__-webapp" name="${rootArtifactId}-webapp">
-      <fileSets>
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory>src/main/java</directory>
-          <includes>
-            <include>**/*.java</include>
-            <include>**/*.xml</include>
-          </includes>
-        </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory>src/main/resources</directory>
-          <includes>
-            <include>**/*.xml</include>
-            <include>**/*.html</include>
-          </includes>
-        </fileSet>
-        <fileSet encoding="UTF-8">
-          <directory>src/main/resources</directory>
-          <includes>
-            <include>**/*.MF</include>
-          </includes>
-        </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory>src/test/java</directory>
-          <includes>
-            <include>**/*.xml</include>
-          </includes>
-        </fileSet>
-        <fileSet encoding="UTF-8">
-          <directory>src/test/java</directory>
-          <includes>
-            <include>**/*.MF</include>
-          </includes>
-        </fileSet>
-      </fileSets>
-    </module>
-    <module id="${rootArtifactId}-web-less" dir="__rootArtifactId__-web-less" name="${rootArtifactId}-web-less">
-      <fileSets>
-        <fileSet encoding="UTF-8">
-          <directory>src/main/resources</directory>
-          <includes>
-            <include>**/*.MF</include>
-            <include>**/*.less</include>
-          </includes>
-        </fileSet>
-      </fileSets>
-    </module>
-  </modules>
-  <requiredProperties>
-  	<requiredProperty key="restUrl"><defaultValue>rst</defaultValue></requiredProperty>
-  	<requiredProperty key="websocketUrl"><defaultValue>ws</defaultValue></requiredProperty>
-  	<requiredProperty key="webModuleName"><defaultValue>WebApp</defaultValue></requiredProperty>
-  </requiredProperties>
+<archetype-descriptor
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+	name="Quiz"
+	xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<modules>
+		<module id="${rootArtifactId}-ear" dir="__rootArtifactId__-ear"
+			name="${rootArtifactId}-ear">
+			<fileSets>
+				<fileSet encoding="UTF-8">
+					<directory>src/main/application</directory>
+					<includes>
+						<include>**/*.MF</include>
+					</includes>
+				</fileSet>
+			</fileSets>
+		</module>
+		<module id="${rootArtifactId}-dto" dir="__rootArtifactId__-dto"
+			name="${rootArtifactId}-dto">
+			<fileSets>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>**/*.java</include>
+						<include>**/*.config</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory>src/main/resources</directory>
+					<includes>
+						<include>**/*.xml</include>
+						<include>**/*.MF</include>
+					</includes>
+				</fileSet>
+			</fileSets>
+		</module>
+		<module id="${rootArtifactId}-ejb" dir="__rootArtifactId__-ejb"
+			name="${rootArtifactId}-ejb">
+			<fileSets>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>**/*.java</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory>src/main/resources</directory>
+					<includes>
+						<include>**/*.xml</include>
+					</includes>
+				</fileSet>
+				<fileSet encoding="UTF-8">
+					<directory>src/main/resources</directory>
+					<includes>
+						<include>**/*.MF</include>
+					</includes>
+				</fileSet>
+			</fileSets>
+		</module>
+		<module id="${rootArtifactId}-dao" dir="__rootArtifactId__-dao"
+			name="${rootArtifactId}-dao">
+			<fileSets>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>**/*.java</include>
+						<include>**/*.config</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory>src/main/resources</directory>
+					<includes>
+						<include>**/*.xml</include>
+						<include>**/*.MF</include>
+					</includes>
+				</fileSet>
+			</fileSets>
+		</module>
+		<module id="${rootArtifactId}-web-static" dir="__rootArtifactId__-web-static"
+			name="${rootArtifactId}-web-static">
+			<fileSets>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory>src/main/webapp</directory>
+					<includes>
+						<include>**/*.html</include>
+					</includes>
+				</fileSet>
+			</fileSets>
+		</module>
+		<module id="${rootArtifactId}-webapp" dir="__rootArtifactId__-webapp"
+			name="${rootArtifactId}-webapp">
+			<fileSets>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>**/*.java</include>
+						<include>**/*.xml</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory>src/main/resources</directory>
+					<includes>
+						<include>**/*.xml</include>
+						<include>**/*.html</include>
+					</includes>
+				</fileSet>
+				<fileSet encoding="UTF-8">
+					<directory>src/main/resources</directory>
+					<includes>
+						<include>**/*.MF</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory>src/test/java</directory>
+					<includes>
+						<include>**/*.xml</include>
+					</includes>
+				</fileSet>
+				<fileSet encoding="UTF-8">
+					<directory>src/test/java</directory>
+					<includes>
+						<include>**/*.MF</include>
+					</includes>
+				</fileSet>
+			</fileSets>
+		</module>
+		<module id="${rootArtifactId}-web-less" dir="__rootArtifactId__-web-less"
+			name="${rootArtifactId}-web-less">
+			<fileSets>
+				<fileSet encoding="UTF-8">
+					<directory>src/main/resources</directory>
+					<includes>
+						<include>**/*.MF</include>
+						<include>**/*.less</include>
+					</includes>
+				</fileSet>
+			</fileSets>
+		</module>
+	</modules>
+	<requiredProperties>
+		<requiredProperty key="restUrl">
+			<defaultValue>rst</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="websocketUrl">
+			<defaultValue>ws</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="webModuleName">
+			<defaultValue>WebApp</defaultValue>
+		</requiredProperty>
+	</requiredProperties>
 </archetype-descriptor>
