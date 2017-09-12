@@ -96,7 +96,7 @@
 					<draftCompile>true</draftCompile>
 					<webappDirectory>${project.build.directory}/${project.build.finalName}/META-INF/resources</webappDirectory>
 					<modules>
-						<module>ru.sendto.quiz.webapp.Quiz</module>
+						<module>${package}.webapp.client.${webModuleName}</module>
 					</modules>
 					<deploy>${project.build.directory}/gwt-deploy</deploy>
 				</configuration>
